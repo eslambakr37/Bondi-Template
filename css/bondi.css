@@ -1,0 +1,247 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+/* Start Navbar */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .container .navbar-collapse .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .container .navbar-collapse .active {
+    color: var(--green-color);
+}
+
+.navbar .container .navbar-collapse li:hover a,
+.navbar .container .navbar-collapse .nav-link:focus {
+    color: var(--green-color);
+}
+
+.navbar .container .navbar-collapse .search {
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+    background-color: var(--dark-color);
+    color: white;
+    min-height: calc(100vh - 72px);
+}
+
+/* End Landing */
+
+/* start Features */
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features .feat h4 {
+    color: var(--yellow-color);
+}
+
+/* End Features */
+
+/* Start Our Work */
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: "Application";
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    left: -100%;
+    background-color: rgba(51, 209, 204, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.our-work .box:hover::before {
+    left: 5px;
+}
+
+/* End Our Work */
+
+
+/* Start Stuff  */
+.stuff .desc {
+    max-width: 500px;
+}
+
+/* End Stuff  */
+
+
+/* Start Team */
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow-color);
+}
+
+.team .card h4 {
+    background-color: var(--green-color);
+}
+
+/* End Team */
+
+/* Start Project */
+.project {
+    background-color: var(--dark-color);
+}
+
+/* End Project */
+
+/* Start Blog */
+.blog .box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* End Blog */
+
+/* Start Subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subscribe input[type="email"]:focus {
+    outline: none;
+}
+
+.subscribe input[type="email"]::placeholder {
+    color: white;
+    transition: 0.3s;
+}
+
+.subscribe input[type="email"]:focus::placeholder {
+    opacity: 0;
+}
+
+.subscribe input[type="button"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    transition: 0.3s;
+}
+
+.subscribe input[type="button"]:hover {
+    color: white;
+}
+
+/* End Subscribe */
+
+/* Start footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+footer .copyright>span {
+    color: var(--green-color);
+}
+
+footer .copyright>div>span {
+    color: var(--yellow-color);
+}
+
+footer .social .facebook {
+    background-color: #1877f2;
+}
+
+footer .social .twitter {
+    background-color: #1da1f2;
+}
+
+footer .social .linkedin {
+    background-color: #0077b5;
+}
+
+footer .social .youtube {
+    background-color: #ff0000;
+}
+
+/* End footer */
